@@ -1,0 +1,18 @@
+#user-profile{
+    height: 200px;
+    width: 200px;
+}
+#main_card{
+     width: 400px;
+    margin-top: 100px;
+}
+#navBar{
+    background-color: purple;
+    color: white;
+}
+.loginStyle{
+    color: white !important;
+    font-weight: bold !important;
+    font-family: sans-serif;
+
+}

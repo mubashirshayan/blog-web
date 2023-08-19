@@ -1,0 +1,69 @@
+
+.navButton{
+    display: flex;
+    padding: 20px;
+    
+}
+.nav-item{
+    margin-left: 40px !important;
+    color: white !important;
+}
+.navColor{
+    background-color: purple !important;
+
+}
+.nav-link{
+    color: white !important;
+}
+.loginStyle{
+    color: white !important;
+    font-weight: bold !important;
+    font-family: sans-serif !important;
+
+}
+.dashboard{
+    height: 70px;
+    background-color:rgb(217, 219, 221);
+    padding: 10px;
+     
+}
+.subplaceHolder{
+    height: 400px;
+    width: 700px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    margin-left: 40px;
+     
+}
+.mind{
+    height: 250px;
+    width: 600px;
+    background-color: white;
+}
+.main_input{
+    height: 70px;
+    width: 600px;
+    background-color: white;
+}
+.placeHolder{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messagesList{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submessagesList{
+    height: 300px;
+    width: 700px;
+    background-color: lightgrey;
+    border: 1px solid whitesmoke;
+    margin-left: 40px;
+     
+}

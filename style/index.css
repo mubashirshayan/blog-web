@@ -1,0 +1,43 @@
+*body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navBack{
+    background-color: purple !important;
+    color: white !important;
+}
+
+.maincontainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: beige
+}
+/* .subcontainer{
+  
+    
+} */
+.navUl{
+    margin-left:20px !important ;
+}
+.loginStyle{
+    color: white !important;
+    font-weight: bold !important;
+    font-family: sans-serif;
+
+}
+.messagesList{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submessagesList{
+    height: 300px;
+    width: 700px;
+    background-color: lightgrey;
+    border: 1px solid whitesmoke;
+    margin-left: 40px;
+     
+}
