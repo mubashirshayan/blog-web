@@ -1,0 +1,16 @@
+#navBar{
+    background-color: purple;
+    color: white;
+}
+.blogList{
+    width: 700px;
+    background-color: lightgrey;
+    border: 1px solid black;
+    margin-left: 40px;
+}
+@media(max-width: 480px) {
+    .blogList{
+     max-width: 250px;
+     margin-right: 30px;
+    }
+ }

@@ -10,9 +10,16 @@
     background-color: purple;
     color: white;
 }
-.loginStyle{
+/* .loginStyle{
     color: white !important;
     font-weight: bold !important;
     font-family: sans-serif;
 
+} */
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
