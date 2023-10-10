@@ -18,7 +18,7 @@ logoutBtn && logoutBtn.addEventListener("click", () => {
 
 let deleteData=async(id)=>{
   try{
-  console.log(id)
+  //console.log(id)
   await deleteDoc(doc(db, "blogs", id));
   }
   catch(err){
@@ -34,12 +34,6 @@ let getMessages=async(uid)=>{
   
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((doc) => {
-    console.log(doc.id, " => ", doc.data());
-
- 
-
-
-
    const {title,description,timestamp}=doc.data();
 
     messages.innerHTML+=` <div class="messagesList" >  
@@ -113,6 +107,8 @@ async() => {
             userId:uid,
             userData:docSnap.data()
           });
+          titleValue.value="";
+          discription.value="";
          getMessages(uid);
           //console.log("Document written with ID: ", docRef.id);
               
@@ -120,53 +116,5 @@ async() => {
           //  console.log(err)
        // }
     }
-
-
-/////////////getMessages////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//       messages.innerHTML+=`  <div id='${message.doc.id}'></div>
-//       <div class="messagesList">
-//         <div class="submessagesList">
-           
-//           <div class="mind"  id="textArea"><p>'${message.doc.data().message}'</p></div>
-//           <div class="AddBtn"><button type="button" class="btn btn-primary" id="addBtn" onclick="deleteData('${message.doc.id}')">Delete</button></div>
-//         </div>
-//       </div> `
-    
-  // homeMessages.innerHTML+=`<div id="messageMain"></div>
-  // <div class="messagesList">
-  //   <div class="submessagesList">
-       
-  //     <div class="mind"  id="textArea"><p>'${message.doc.data().message}'</p></div>
-  //     <div class="AddBtn"><button type="button" class="btn btn-primary" id="addBtn">Delete</button></div>
-  //   </div>
-  // </div>`
-//     })
-    
-//   });
-// }
-///////////////////////delete messages/////////////
-
-
-
-
-
  window.deleteData=deleteData;
-
 window.setMessage=setMessage;

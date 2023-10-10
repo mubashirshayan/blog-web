@@ -19,7 +19,7 @@ let email=document.getElementById('email');
     await setDoc(doc(db, "users", user.uid), {
         displayName: displayName.value,
         email: email.value,
-        password: password.value
+        // password: password.value
     });
  console.log(user);
     localStorage.setItem("uid", user.uid)
@@ -58,7 +58,7 @@ let email=document.getElementById('email');
 });
 
  }
-console.log(localStorage.getItem("uid"))
+//console.log(localStorage.getItem("uid"))
  let signupBtn=document.getElementById("signupBtn");
  signupBtn&&signupBtn.addEventListener("click",signup)
 onAuthStateChanged(auth, (user) => {
@@ -74,7 +74,7 @@ onAuthStateChanged(auth, (user) => {
 }
 }
   })
-console.log(location);
+
 // ////////////////////////////////LoginButton/////////////////////////
 const loginBtn = document.getElementById('login-btn');
 

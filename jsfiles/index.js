@@ -28,7 +28,7 @@ let getAlluserBlogs=async()=>{
 const querySnapshot = await getDocs(collection(db, "blogs"));
 querySnapshot.forEach((doc) => {
   // doc.data() is never undefined for query doc snapshots
-  console.log(doc.id, " => ", doc.data());
+
 
       const {title,description,timestamp}=doc.data();
       messages.innerHTML+=` <div class="messagesList" >  
@@ -48,7 +48,7 @@ querySnapshot.forEach((doc) => {
       <h5>${title}
           </h5>
         <p>${description} </p>
-        <a href="userallblog.html">User all Blogs</a>
+        <a href="userallblog.html?user=${doc.data().userId}">User all Blogs</a>
       </div>
    
     </div>

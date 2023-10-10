@@ -5,13 +5,13 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "https://w
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDFet_oLnHFBqffut41D1RwYc63JSPgP_k",
-    authDomain: "smit-hacathon.firebaseapp.com",
-    projectId: "smit-hacathon",
-    storageBucket: "smit-hacathon.appspot.com",
-    messagingSenderId: "867373705069",
-    appId: "1:867373705069:web:d367b468e1042c22525c64",
-    measurementId: "G-NY0XX4M5C2"
+  authDomain: "smit-hacathon.firebaseapp.com",
+  projectId: "smit-hacathon",
+  storageBucket: "smit-hacathon.appspot.com",
+  apiKey:"AIzaSyDFet_oLnHFBqffut41D1RwYc63JSPgP_k",
+   messagingSenderId: "867373705069",
+   appId:"1:867373705069:web:d367b468e1042c22525c64",
+   measurementId: "G-NY0XX4M5C2",
   };
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
@@ -21,3 +21,9 @@ const firebaseConfig = {
  ,ref,uploadBytesResumable,getDownloadURL,getDoc,storage,addDoc,updateDoc,deleteDoc,serverTimestamp,collection,query,where,onSnapshot,getDocs
 }
   
+const env = {
+  apiKey:"AIzaSyDFet_oLnHFBqffut41D1RwYc63JSPgP_k",
+   messagingSenderId: "867373705069",
+   appId:"1:867373705069:web:d367b468e1042c22525c64",
+   measurementId: "G-NY0XX4M5C2",
+}
